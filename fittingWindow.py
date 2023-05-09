@@ -646,7 +646,7 @@ class FittingWidget(QWidget):
                                     self._map.set_fit(fit_functions, start_parameters, fit_optimized_parameters,
                                                       pixel=[ix], emit=False)
 
-                            except RuntimeError:
+                            except:
                                 message_box = QMessageBox(self._app.windows['fittingWindow'])
                                 message_box.setIcon(QMessageBox.Information)
                                 message_box.setWindowTitle('Fitting failed!')

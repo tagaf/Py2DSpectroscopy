@@ -31,8 +31,8 @@ class ExportDialog(QDialog):
 
         # add data to the selection box
 
-        self.ui.data_combo_box.addItems(['spectra', '-- integral', '-- mean', '-- maximum'])
-        self.ui.data_combo_box.model().item(0).setEnabled(False)
+        self.ui.data_combo_box.addItems(['All','spectra', '-- integral', '-- mean', '-- maximum'])
+        #self.ui.data_combo_box.model().item(0).setEnabled(False)
         self.ui.data_combo_box.setCurrentIndex(1)
         for key, value in self._map.get_data_names().items():
             if self._map.get_dimension() == 2 or key > 0:

@@ -390,11 +390,38 @@ class MapWindow(QMainWindow):
             file_name = file_name[0]
 
             if file_name == '':
-
                 return
+            data_index = export_dialog.get_data_selection()
             if self._app.maps.get_selected_map().get_dimension() == 2:
-                numpy.savetxt(file_name,
-                              self._app.maps.get_selected_map().get_data(data_index=export_dialog.get_data_selection()))
+                if data_index == 0:
+                    active_fitting_functions = numpy.argwhere(self._app.maps._maps[0]._fit_functions!=0)
+                    map_flat_size = numpy.size(self._app.maps._maps[0]._max_energies)
+                    export_table = numpy.append(self._app.maps._maps[0]._data[1,:,:].reshape((map_flat_size, 1)),
+                                                self._app.maps._maps[0]._data[2,:,:].reshape((map_flat_size, 1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._data[0,:,:].reshape((map_flat_size, 1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._max_energies.reshape((map_flat_size,1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._mean_energies.reshape((map_flat_size, 1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._int_counts.reshape((map_flat_size, 1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
+                    export_table = numpy.append(export_table,
+                                                self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
+                    try:
+                        for ii in range(active_fitting_functions[:,2].max()):
+                            active_fitting_functions_opt_par = self._app.maps._maps[0]._fit_optimized_parameters[:, :, ii, :].reshape((map_flat_size, 1, 1, 4))
+                            for jj in range(4):
+                                export_table = numpy.append(export_table,active_fitting_functions_opt_par[:,0,0,jj], 1)
+                    except:
+                        pass
+
+                    numpy.savetxt(file_name,export_table)
+                else:
+                    numpy.savetxt(file_name,
+                                  self._app.maps.get_selected_map().get_data(data_index-1))
             else:
                 numpy.savetxt(file_name,
                               self._app.maps.get_selected_map().get_data(data_index=1+export_dialog.get_data_selection()))
