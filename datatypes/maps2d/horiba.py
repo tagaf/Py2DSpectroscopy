@@ -15,7 +15,7 @@ class Horiba2D:
         dir_name = path.dirname(self._file_name)
 
         # set map name to the file name
-        map_name = self._file_name[len(dir_name)+1:-4]
+        map_name = self._file_name[len(dir_name) + 1:-4]
 
         # read text file
         file_data = open(self._file_name)
@@ -72,4 +72,4 @@ class Horiba2D:
                 i_px += 1
 
         return map_name, spectra, data_names, data
-    
+
