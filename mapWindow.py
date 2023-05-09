@@ -74,7 +74,7 @@ class MapTab(QWidget):
         self._map_canvas.setFocus()
 
         # check if toolbar or area selector is active and if the left mouse button was used
-        if self._map_canvas.get_toolbar_active() is None and event.button == 1:
+        if self._map_canvas.get_toolbar_active() is True and event.button == 1:
 
             # check if outer area has been clicked
             if event.inaxes is None:

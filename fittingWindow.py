@@ -343,6 +343,13 @@ class FittingWidget(QWidget):
                 message_box.setText('Fitting failed for focused pixel!')
                 message_box.setStandardButtons(QMessageBox.Ok)
                 message_box.exec_()
+            except ValueError:
+                message_box = QMessageBox(self._app.windows['fittingWindow'])
+                message_box.setIcon(QMessageBox.Information)
+                message_box.setWindowTitle('Fitting failed!')
+                message_box.setText('Fitting failed for focused pixel! Check Boundaries!')
+                message_box.setStandardButtons(QMessageBox.Ok)
+                message_box.exec_()
             
         else:
 

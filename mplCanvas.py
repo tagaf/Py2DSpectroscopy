@@ -54,7 +54,7 @@ class PlotCanvas(FigureCanvas):
     def get_toolbar_active(self):
 
         # return the status of the toolbar
-        return self._toolbar._active
+        return self._toolbar.isEnabled()
 
 
 class MapCanvas1D(PlotCanvas):
@@ -405,8 +405,10 @@ class MapCanvas2D(PlotCanvas):
         focus = self._map.get_focus()
 
         # remove old crosshair
-        self._axes.lines.remove(self._crosshair_x)
-        self._axes.lines.remove(self._crosshair_y)
+        #self._axes.lines.remove(self._crosshair_x)
+        #self._axes.lines.remove(self._crosshair_y)
+        self._crosshair_x.remove()
+        self._crosshair_y.remove()
 
         # plot new crosshair
         self._crosshair_x, = self._axes.plot([focus[0], focus[0]], [-9999999999, 9999999999], color='black')

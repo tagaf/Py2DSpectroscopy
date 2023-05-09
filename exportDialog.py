@@ -30,6 +30,7 @@ class ExportDialog(QDialog):
         self.ui = UiExportDialog(self)
 
         # add data to the selection box
+
         self.ui.data_combo_box.addItems(['spectra', '-- integral', '-- mean', '-- maximum'])
         self.ui.data_combo_box.model().item(0).setEnabled(False)
         self.ui.data_combo_box.setCurrentIndex(1)
@@ -65,6 +66,7 @@ class ExportDialog(QDialog):
                     self.ui.data_combo_box.addItems(['γ'+subscripts[i_peak]])
                 if numpy.sum(numpy.int_(fit_functions[:, i_peak] > 0)) > 0:
                     self.ui.data_combo_box.addItems(['FWHM'+subscripts[i_peak]])
+        #self.ui.data_combo_box.addItems(['All'])
 
     def get_data_selection(self):
 
