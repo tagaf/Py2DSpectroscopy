@@ -406,19 +406,14 @@ class MapWindow(QMainWindow):
                                                 self._app.maps._maps[0]._mean_energies.reshape((map_flat_size, 1)), 1)
                     export_table = numpy.append(export_table,
                                                 self._app.maps._maps[0]._int_counts.reshape((map_flat_size, 1)), 1)
-                    export_table = numpy.append(export_table,
-                                                self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
-                    export_table = numpy.append(export_table,
-                                                self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
-                    try:
-                        for ii in range(active_fitting_functions[:, 2].max()):
-                            active_fitting_functions_opt_par = self._app.maps._maps[0]._fit_optimized_parameters[:, :,
-                                                               ii, :].reshape((map_flat_size, 1, 1, 4))
-                            for jj in range(4):
-                                export_table = numpy.append(export_table, active_fitting_functions_opt_par[:, 0, 0, jj],
-                                                            1)
-                    except:
-                        pass
+
+                        # get fit data
+                    fit_functions, fit_initial_parameters, fit_optimized_parameters = self._app.maps._maps[0].get_fit()
+                    for i_peak in range(numpy.argwhere(fit_functions).size):
+                        active_fitting_functions_opt_par = self._app.maps._maps[0]._fit_optimized_parameters[:, :,
+                                                           i_peak, :].reshape((map_flat_size, 4))
+                        active_fitting_functions_opt_par = numpy.nan_to_num(active_fitting_functions_opt_par, copy=True, nan=0.0)
+                        export_table = numpy.append(export_table, active_fitting_functions_opt_par, 1)
 
                     numpy.savetxt(file_name, export_table)
                 else:
