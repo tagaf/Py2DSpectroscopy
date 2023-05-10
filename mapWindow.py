@@ -399,7 +399,7 @@ class MapWindow(QMainWindow):
                     export_table = numpy.append(self._app.maps._maps[0]._data[1, :, :].reshape((map_flat_size, 1)),
                                                 self._app.maps._maps[0]._data[2, :, :].reshape((map_flat_size, 1)), 1)
                     export_table = numpy.append(export_table,
-                                                self._app.maps._maps[0]._data[0, :, :].reshape((map_flat_size, 1)), 1)
+                                                self._app.maps._maps[0]._int_counts.reshape((map_flat_size, 1)), 1)
                     export_table = numpy.append(export_table,
                                                 self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
                     export_table = numpy.append(export_table,

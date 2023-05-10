@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Removed Test Files">
+    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Cleaned Export Datafile Format">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683645148386</updated>
       <workItem from="1683645726096" duration="3567000" />
-      <workItem from="1683710615438" duration="9462000" />
+      <workItem from="1683710615438" duration="9766000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683725883754</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cleaned Export Datafile Format">
+      <created>1683725940837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683725940837</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -223,7 +231,8 @@
     <MESSAGE value="Fixed bugs" />
     <MESSAGE value="Completed Export of all data fits" />
     <MESSAGE value="Removed Test Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Test Files" />
+    <MESSAGE value="Cleaned Export Datafile Format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned Export Datafile Format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
