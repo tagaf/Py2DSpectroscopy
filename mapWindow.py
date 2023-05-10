@@ -404,8 +404,6 @@ class MapWindow(QMainWindow):
                                                 self._app.maps._maps[0]._max_energies.reshape((map_flat_size, 1)), 1)
                     export_table = numpy.append(export_table,
                                                 self._app.maps._maps[0]._mean_energies.reshape((map_flat_size, 1)), 1)
-                    export_table = numpy.append(export_table,
-                                                self._app.maps._maps[0]._int_counts.reshape((map_flat_size, 1)), 1)
 
                         # get fit data
                     fit_functions, fit_initial_parameters, fit_optimized_parameters = self._app.maps._maps[0].get_fit()

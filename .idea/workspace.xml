@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Fixed bugs">
-      <change afterPath="$PROJECT_DIR$/export.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export_test_galvo_p9.799E+2uw__230501_152454.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exportDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/exportDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fittingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/fittingWindow.py" afterDir="false" />
+    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Removed Test Files">
       <change beforePath="$PROJECT_DIR$/mapWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683645148386</updated>
       <workItem from="1683645726096" duration="3567000" />
-      <workItem from="1683710615438" duration="9346000" />
+      <workItem from="1683710615438" duration="9462000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -184,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683711381277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed Export of all data fits">
+      <created>1683725836063</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683725836063</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed Test Files">
+      <created>1683725883754</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683725883754</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -212,7 +221,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs" />
+    <MESSAGE value="Completed Export of all data fits" />
+    <MESSAGE value="Removed Test Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Test Files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,7 +235,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mapWindow.py</url>
-          <line>411</line>
+          <line>409</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
