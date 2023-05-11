@@ -574,10 +574,10 @@ class MicrographCanvas(PlotCanvas):
 
         # remove old points
         for i_plot in range(len(self._plots_fixed_points)):
-            self._map_axes.lines.remove(self._plots_fixed_points[i_plot])
+            #self._map_axes.lines.remove(self._plots_fixed_points[i_plot])
             del self._plots_fixed_points[i_plot]
         for i_plot in range(len(self._plots_moving_points)):
-            self._micro_axes.lines.remove(self._plots_moving_points[i_plot])
+            #self._micro_axes.lines.remove(self._plots_moving_points[i_plot])
             del self._plots_moving_points[i_plot]
 
         # draw new points

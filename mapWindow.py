@@ -415,8 +415,13 @@ class MapWindow(QMainWindow):
 
                     numpy.savetxt(file_name, export_table)
                 else:
-                    numpy.savetxt(file_name,
-                                  self._app.maps.get_selected_map().get_data(data_index - 1))
+                    try:
+                        numpy.savetxt(file_name,
+                                    self._app.maps.get_selected_map().get_data(data_index - 1))
+                    except:
+                        micro_shape = self._app.maps.get_selected_map().get_data().shape
+                        numpy.savetxt(file_name,
+                                      numpy.squeeze(self._app.maps.get_selected_map().get_data().reshape((micro_shape[0]*micro_shape[2],micro_shape[1],1))))
             else:
                 numpy.savetxt(file_name,
                               self._app.maps.get_selected_map().get_data(data_index=1+export_dialog.get_data_selection()))

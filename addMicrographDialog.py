@@ -130,7 +130,7 @@ class AddMicrographDialog(QDialog):
     def cb_map_clicked(self, event):
 
         # check if toolbar is active
-        if self._micro_canvas.get_toolbar_active() is None:
+        if self._micro_canvas.get_toolbar_active() is True:
 
             # check which axes were clicked
             if event.inaxes is None:

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Cleaned Export Datafile Format">
+    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Now Saving cosmic ray subtracted counts instead of raw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addMicrographDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/addMicrographDialog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mplCanvas.py" beforeDir="false" afterPath="$PROJECT_DIR$/mplCanvas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683645148386</updated>
       <workItem from="1683645726096" duration="3567000" />
-      <workItem from="1683710615438" duration="9766000" />
+      <workItem from="1683710615438" duration="13269000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683725940837</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Now Saving cosmic ray subtracted counts instead of raw">
+      <created>1683726258353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683726258353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -232,7 +241,8 @@
     <MESSAGE value="Completed Export of all data fits" />
     <MESSAGE value="Removed Test Files" />
     <MESSAGE value="Cleaned Export Datafile Format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned Export Datafile Format" />
+    <MESSAGE value="Now Saving cosmic ray subtracted counts instead of raw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now Saving cosmic ray subtracted counts instead of raw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -244,13 +254,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mapWindow.py</url>
-          <line>409</line>
-          <option name="timeStamp" value="9" />
+          <line>422</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addMicrographDialog.py</url>
-          <line>132</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/mplCanvas.py</url>
+          <line>575</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -262,7 +272,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1683725131669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1683802859261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Py2DSpectroscopy.py">
