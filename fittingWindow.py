@@ -337,12 +337,13 @@ class FittingWidget(QWidget):
                 # save fit
                 self._map.set_fit(fit_functions, fit_initial_parameters, fit_optimized_parameters, emit=True)
             except:
-                message_box = QMessageBox(self._app.windows['fittingWindow'])
-                message_box.setIcon(QMessageBox.Information)
-                message_box.setWindowTitle('Fitting failed!')
-                message_box.setText('Fitting failed for focused pixel!')
-                message_box.setStandardButtons(QMessageBox.Ok)
-                message_box.exec_()
+                disp('Fitting failed')
+                #message_box = QMessageBox(self._app.windows['fittingWindow'])
+                #message_box.setIcon(QMessageBox.Information)
+                #message_box.setWindowTitle('Fitting failed!')
+                #message_box.setText('Fitting failed for focused pixel!')
+                #message_box.setStandardButtons(QMessageBox.Ok)
+                #message_box.exec_()
             
         else:
 

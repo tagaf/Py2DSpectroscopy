@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Now Saving cosmic ray subtracted counts instead of raw">
+      <change beforePath="$PROJECT_DIR$/.idea/Py2DSpectroscopy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Py2DSpectroscopy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addMicrographDialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/addMicrographDialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mplCanvas.py" beforeDir="false" afterPath="$PROJECT_DIR$/mplCanvas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fittingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/fittingWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,10 +103,12 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "X:/LANES Common/Our Publications/1b Papers - OneDrive/2023 Lopriore&Tagarelli - IXs in DBRs/2 Figures and data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -174,6 +176,10 @@
       <updated>1683645148386</updated>
       <workItem from="1683645726096" duration="3567000" />
       <workItem from="1683710615438" duration="13269000" />
+      <workItem from="1684078697642" duration="34000" />
+      <workItem from="1684080131630" duration="665000" />
+      <workItem from="1714865571214" duration="24000" />
+      <workItem from="1714865945416" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -257,11 +263,6 @@
           <line>422</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mplCanvas.py</url>
-          <line>575</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -272,7 +273,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1683802859261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1714891020466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Py2DSpectroscopy.py">
