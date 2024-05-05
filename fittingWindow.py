@@ -337,7 +337,7 @@ class FittingWidget(QWidget):
                 # save fit
                 self._map.set_fit(fit_functions, fit_initial_parameters, fit_optimized_parameters, emit=True)
             except:
-                disp('Fitting failed')
+                print('Fitting failed')
                 #message_box = QMessageBox(self._app.windows['fittingWindow'])
                 #message_box.setIcon(QMessageBox.Information)
                 #message_box.setWindowTitle('Fitting failed!')
@@ -491,16 +491,17 @@ class FittingWidget(QWidget):
                                                           pixel=[ix, iy], emit=False)
 
                                 except RuntimeError:
-                                    message_box = QMessageBox(self._app.windows['fittingWindow'])
-                                    message_box.setIcon(QMessageBox.Information)
-                                    message_box.setWindowTitle('Fitting failed!')
-                                    message_box.setText('Fitting failed for pixel ('+str(ix)+','+str(iy)+')')
-                                    message_box.addButton('Continue Fitting', QMessageBox.AcceptRole)
-                                    message_box.addButton('Stop Fitting', QMessageBox.AcceptRole)
-                                    message_box.exec_()
-                                    if message_box.result() == 1:
-                                        progress_dialog.close()
-                                        return
+                                    print('Fitting failed for pixel ('+str(ix)+','+str(iy)+')')
+                                    #message_box = QMessageBox(self._app.windows['fittingWindow'])
+                                    #message_box.setIcon(QMessageBox.Information)
+                                    #message_box.setWindowTitle('Fitting failed!')
+                                    #message_box.setText('Fitting failed for pixel ('+str(ix)+','+str(iy)+')')
+                                    #message_box.addButton('Continue Fitting', QMessageBox.AcceptRole)
+                                    #message_box.addButton('Stop Fitting', QMessageBox.AcceptRole)
+                                    #message_box.exec_()
+                                    #if message_box.result() == 1:
+                                    #    progress_dialog.close()
+                                    #    return
 
                             # process events
                             self._app.processEvents()

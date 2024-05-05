@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Now Saving cosmic ray subtracted counts instead of raw">
-      <change beforePath="$PROJECT_DIR$/.idea/Py2DSpectroscopy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Py2DSpectroscopy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fittingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/fittingWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +178,7 @@
       <workItem from="1684078697642" duration="34000" />
       <workItem from="1684080131630" duration="665000" />
       <workItem from="1714865571214" duration="24000" />
-      <workItem from="1714865945416" duration="2360000" />
+      <workItem from="1714865945416" duration="3914000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -216,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683726258353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Now Saving cosmic ray subtracted counts instead of raw">
+      <created>1714891748923</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714891748923</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -240,6 +246,29 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
