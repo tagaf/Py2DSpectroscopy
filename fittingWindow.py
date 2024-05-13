@@ -642,16 +642,17 @@ class FittingWidget(QWidget):
                                                       pixel=[ix], emit=False)
 
                             except:
-                                message_box = QMessageBox(self._app.windows['fittingWindow'])
-                                message_box.setIcon(QMessageBox.Information)
-                                message_box.setWindowTitle('Fitting failed!')
-                                message_box.setText('Fitting failed for pixel ('+str(ix)+')')
-                                message_box.addButton('Continue Fitting', QMessageBox.AcceptRole)
-                                message_box.addButton('Stop Fitting', QMessageBox.AcceptRole)
-                                message_box.exec_()
-                                if message_box.result() == 1:
-                                    progress_dialog.close()
-                                    return
+                                print('Fitting failed for pixel ('+str(ix)+')')
+                                #message_box = QMessageBox(self._app.windows['fittingWindow'])
+                                #message_box.setIcon(QMessageBox.Information)
+                                #message_box.setWindowTitle('Fitting failed!')
+                                #message_box.setText('Fitting failed for pixel ('+str(ix)+')')
+                                #message_box.addButton('Continue Fitting', QMessageBox.AcceptRole)
+                                #message_box.addButton('Stop Fitting', QMessageBox.AcceptRole)
+                                #message_box.exec_()
+                                #if message_box.result() == 1:
+                                #    progress_dialog.close()
+                                #    return
 
                         # process events
                         self._app.processEvents()

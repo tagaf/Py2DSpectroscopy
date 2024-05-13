@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Now Saving cosmic ray subtracted counts instead of raw">
+    <list default="true" id="662ebc33-fd84-4a84-96c3-3d0d87596e43" name="Default" comment="Updated Readme with example table&#10;Disabled messagebox at failed fitting.">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fittingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/fittingWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mplCanvas.py" beforeDir="false" afterPath="$PROJECT_DIR$/mplCanvas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
@@ -95,22 +99,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "X:/LANES Common/Our Publications/1b Papers - OneDrive/2023 Lopriore&Tagarelli - IXs in DBRs/2 Figures and data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;X:/LANES Common/Our Publications/1b Papers - OneDrive/2023 Lopriore&amp;Tagarelli - IXs in DBRs/2 Figures and data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Py2DSpectroscopy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Py2DSpectroscopy" />
@@ -178,7 +182,12 @@
       <workItem from="1684078697642" duration="34000" />
       <workItem from="1684080131630" duration="665000" />
       <workItem from="1714865571214" duration="24000" />
-      <workItem from="1714865945416" duration="3914000" />
+      <workItem from="1714865945416" duration="122402000" />
+      <workItem from="1715274754139" duration="9000" />
+      <workItem from="1715274773964" duration="15000" />
+      <workItem from="1715274803357" duration="14000" />
+      <workItem from="1715276195362" duration="1006000" />
+      <workItem from="1715587128771" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed bugs">
       <created>1683711381277</created>
@@ -222,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714891748923</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated Readme with example table&#10;Disabled messagebox at failed fitting.">
+      <created>1714894092799</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714894092799</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,7 +274,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="lanes/master" />
                       </list>
                     </value>
                   </entry>
@@ -277,23 +293,10 @@
     <MESSAGE value="Removed Test Files" />
     <MESSAGE value="Cleaned Export Datafile Format" />
     <MESSAGE value="Now Saving cosmic ray subtracted counts instead of raw" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now Saving cosmic ray subtracted counts instead of raw" />
+    <MESSAGE value="Updated Readme with example table&#10;Disabled messagebox at failed fitting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme with example table&#10;Disabled messagebox at failed fitting." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mplCanvas.py</url>
-          <line>407</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mapWindow.py</url>
-          <line>422</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="self" />
@@ -302,7 +305,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1714891020466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Py2DSpectroscopy$Py2DSpectroscopy.coverage" NAME="Py2DSpectroscopy Coverage Results" MODIFIED="1715587129906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Py2DSpectroscopy.py">

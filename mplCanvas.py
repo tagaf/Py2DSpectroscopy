@@ -8,6 +8,7 @@ from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as Navigatio
 from matplotlib.figure import Figure
 from matplotlib import gridspec, image
 import matplotlib.patches as patches
+import cmcrameri as cmc
 # import UI
 from UIs.colormapDialogUi import UiColormapDialog
 
@@ -20,7 +21,10 @@ class ColormapDialog(QDialog):
         QDialog.__init__(self, parent)
 
         # define available colormaps
+
         colormaps = ['bwr', 'gnuplot', 'gnuplot2', 'inferno', 'nipy_spectral', 'seismic', 'viridis']
+        for idx,cmap in enumerate(cmc.cm._cmap_names_sequential):
+            colormaps.append(cmap)
 
         # load and set up UI
         self.ui = UiColormapDialog(self)
@@ -30,7 +34,11 @@ class ColormapDialog(QDialog):
         for i_colormap in range(len(colormaps)):
             if colormaps[i_colormap] == current_colormap:
                 current_id = i_colormap
-            self.ui.colormap_combobox.addItem(QIcon('./img/cm_'+colormaps[i_colormap]+'.png'), colormaps[i_colormap])
+            try:
+                self.ui.colormap_combobox.addItem(QIcon('./img/cm_'+colormaps[i_colormap]+'.png'), colormaps[i_colormap])
+            except:
+                self.ui.colormap_combobox.addItem(colormaps[i_colormap],
+                                                  colormaps[i_colormap])
         self.ui.colormap_combobox.setCurrentIndex(current_id)
 
     def get_colormap(self):
@@ -491,9 +499,15 @@ class MapCanvas2DToolbar(NavigationToolbar):
         # change the colormap
         if colormap_dialog.result() == 1:
             colormaps = ['bwr', 'gnuplot', 'gnuplot2', 'inferno', 'nipy_spectral', 'seismic', 'viridis']
-            self.canvas._map_plot.set_cmap(colormaps[colormap_dialog.get_colormap()])
+            for idx, cmap in enumerate(cmc.cm._cmap_names_sequential):
+                colormaps.append('cmc.cm.'+cmap)
+            try:
+                self.canvas._map_plot.set_cmap(colormaps[colormap_dialog.get_colormap()])
+            except:
+                #self.canvas._map_plot.set_cmap(exec(f"print({colormaps[colormap_dialog.get_colormap()]})"))
+                self.canvas._map_plot.set_cmap(exec(f"print({colormaps[20]})"))
 
-            # redraw
+                # redraw
             self.canvas.draw()
 
     def toggle_axes_aspect(self):

@@ -18,6 +18,7 @@ A video tutorial is available on Youtube.
 * NumPy 1.12.0
 * SciPy 0.18.0
 * Skimage 0.12.3
+* cmcrameri 1.9
 
 ## Features
 
